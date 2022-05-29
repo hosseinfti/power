@@ -219,25 +219,30 @@ class App extends Component {
         // console.log(sum);
 
         // sum = final_mul + sum;
-        if ((z = 0)) {
+        if (z == 0) {
           if (nb == 0 && String(mul).length > 1) {
             newsum[mxl] = String(final_mul)[final_mul.length - 1];
             newsum[mxl - 1] = String(dahgan)[dahgan.length - 2];
           } else {
             newsum[mxl] = String(final_mul)[final_mul.length - 1];
           }
-        } else {
-          newsum[mxl] = String(final_mul)[final_mul.length - 1 - z];
-          newsum[mxl - 1] = String(dahgan)[dahgan.length - 2 - z];
+        } else if(dahgan !== ""){
+          newsum[mxl] = String(final_mul)[final_mul.length - 1];
+          newsum[mxl - 1] = String(dahgan)[dahgan.length - 1];
+          dahgan = ""
+        }
+        else {
+          newsum[mxl - 1] = String(final_mul)[final_mul.length - 1];
+
         }
       }
     }
-    if (bj.length - 1 == 0) {
-      final_sum = this.sum(sum, sum2);
+    // if (bj.length - 1 == 0) {
+    //   final_sum = this.sum(sum, sum2);
       // sum = sum + this.tavan(z);
-    }
-    sum2 = sum;
-    return final_sum;
+    // }
+    // sum2 = sum;
+    return newsum;
     // this.setState({
     //   result: String(sum).replace(/\B(?=(\d{3})+(?!\d))/g, ","),
     // });
