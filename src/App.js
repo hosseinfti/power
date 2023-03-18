@@ -164,7 +164,6 @@ class App extends Component {
     //       console.log('----');
     //     }
 
-    // console.log({s});
 
     // if(tem) {sum[na+1] = tem; tem=0;}
 
