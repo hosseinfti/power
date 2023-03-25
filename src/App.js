@@ -248,7 +248,6 @@ class App extends Component {
   };
 
   sum = (x, y) => {
-    // debugger;
     let a = String(x);
     let b = String(y);
 
