@@ -276,7 +276,6 @@ class App extends Component {
   };
 
   power = (x = 0, y = 0) => {
-    // console.log(x, y);
     this.setState({
       result: this.multiplication(x, y),
     });
