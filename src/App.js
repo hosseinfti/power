@@ -215,7 +215,6 @@ class App extends Component {
         }
 
         // sum.length;
-        // console.log(sum);
 
         // sum = final_mul + sum;
         if (z == 0) {
