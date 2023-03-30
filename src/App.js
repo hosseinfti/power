@@ -161,7 +161,6 @@ class App extends Component {
     //         let c =
     //         s = +(sum[j][i] || 0) + _t + s;
     //       }
-    //       console.log('----');
     //     }
 
 
