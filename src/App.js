@@ -154,7 +154,6 @@ class App extends Component {
 
     //     let s = "";
     //     let _t = 0;
-    //     console.log(sum);
     //     let max = sum[0].length;
     //     for(let i = 0; i < max; i++){
     //       for(let j = 0; j < sum.length; j++){
